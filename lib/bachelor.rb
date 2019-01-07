@@ -5,8 +5,8 @@ end
 
 def get_contestant_name(data, occupation)
   data.each do |season, list_items|
-    list_items.each do |contestants|
-      contestants.each do |key, value|
+    list_items.each do |cont|
+      cont.each do |key, value|
         if value == occupation
           return contestants["name"]
         end

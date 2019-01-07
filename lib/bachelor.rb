@@ -8,7 +8,7 @@ def get_contestant_name(data, occupation)
     list_items.each do |cont|
       cont.each do |key, value|
         if value == occupation
-          return contestants["name"]
+          return cont["name"]
         end
       end
     end

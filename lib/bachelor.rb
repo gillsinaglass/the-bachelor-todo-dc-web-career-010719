@@ -42,5 +42,17 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  # code here
+  count = 0
+  age = 0
+  data[season].each do |cont|
+    cont.each do |key, value|
+      if key == "age"
+        count += 1
+        age += value.to_i #Kept trying to add strings
+      end
+    end
+  end
+
+  average_age = age / count.to_f #Floats contain decimals
+  return average_age
 end

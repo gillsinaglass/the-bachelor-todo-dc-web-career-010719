@@ -34,7 +34,7 @@ def get_occupation(data, hometown)
     list_items.each do |cont|
       cont.each do |key,value|
         if value == hometown
-          return hash["occupation"]
+          return cont["occupation"]
         end
       end
     end

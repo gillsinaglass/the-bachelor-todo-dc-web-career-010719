@@ -54,5 +54,5 @@ def get_average_age_for_season(data, season)
   end
 
   average_age = age / count.to_f #Floats contain decimals
-  return average_age
+  return average_age.round 
 end
